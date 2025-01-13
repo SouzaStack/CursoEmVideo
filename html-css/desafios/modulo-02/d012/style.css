@@ -52,6 +52,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font03);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -98,4 +99,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+
+@media (max-width: 320px) {
+    section > p {
+        line-height: 2em;
+        font-size: 5vw;
+    }
 }
