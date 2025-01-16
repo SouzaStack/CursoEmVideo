@@ -18,15 +18,16 @@
 
         table {
             width: 50%;
+            height: 50%;
             border-collapse: collapse;
             margin: auto;
         }
-
+        
         caption {
-            font-size: 1.5em;
-            text-shadow: 1px 1px #000000;
+            font-size: 1.1em;
             border: 1px solid #000;
             color: #1F60DE;
+            text-shadow: 0px 1px #00000073;
             border-radius: 5px 5px 0 0;
             padding: 10px;
             background-color: #43a8ded7;
@@ -35,7 +36,13 @@
         td {
             border: 1px solid #000;
             padding: 10px;
+            color: #1F60DE;
             background-color: #43a8dea2;
+
+            text-align: center; /* left, center, right */
+        }
+        .numero {
+            vertical-align: top; /* top, middle, bottom */
         }
 
     </style>
@@ -57,7 +64,7 @@
             </tr>
             <tr> <!-- Segunda linha da Tabela -->
                 <td>A2</td>
-                <td>B2</td>
+                <td class="numero">B2</td>
                 <td>C2</td>
             </tr>
             <tr> <!-- Terceira linha da Tabela -->
