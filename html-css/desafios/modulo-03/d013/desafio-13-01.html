@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffff00;
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        table {
+            width: 300px;
+            margin: auto;
+        }
+        tr td {
+            background-color: #ff0000;
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .type {
+            background-color: #00ff00;
+        }
+
+        caption {
+            font-family: 'Courier New', Courier, monospace;
+
+            font-weight: 700;
+            font-size: 1.5em;
+            padding-bottom: 25px;
+        }
+
+        span {
+            color: #fff;
+            background-color: rgb(0, 162, 255);
+            padding: 7px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.8em;
+        }
+
+    </style>
+</head>
+<body>
+        <table>
+            <caption>Números de <span>1 ao 15</span></caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td class="type" rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td class="type" colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td class="type" rowspan="2">10</td>
+                <td class="type" colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </table>
+</body>
+</html>
