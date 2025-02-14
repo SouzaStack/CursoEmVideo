@@ -24,6 +24,8 @@ header > h1 {
 
 ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 25px 25%;
     gap: 10px;
     list-style: none;
@@ -44,5 +46,5 @@ h2, p {
     padding: 10px;
     margin: auto;
     text-align: justify;
-    width: 50%;
+    width: 90%;
 }
