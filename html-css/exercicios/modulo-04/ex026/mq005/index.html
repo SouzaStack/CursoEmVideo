@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda tudo sobre Media Queries em CSS3 e como criar layouts responsivos para diferentes dispositivos e tamanhos de tela.">
+    <meta name="keywords" content="media queries, css3, design responsivo, web design, front-end, desenvolvimento web">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Media Query</title>
+</head>
+
+<body>
+    <header>
+        <h1>Media Query - Menu Responsivo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sintaxe</a></li>
+                <li><a href="#">Mídia</a></li>
+                <li><a href="#">Características</a></li>
+                <li><a href="#">Exemplos</a></li>
+                <li><a href="#">Vantagens</a></li>
+                <li><a href="#">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>O que são Media Queries?</h2>
+
+            <p>Media Queries são regras condicionais que permitem aplicar estilos CSS específicos com base em
+                características do dispositivo ou do navegador, como:</p>
+        </section>
+
+        <section>
+            <h2>Sintaxe</h2>
+
+            <p>A sintaxe básica de uma Media Query é a seguinte:</p>
+
+            <pre>
+                <code>
+                @media (condição) {
+                    /* Estilos CSS */
+                }
+                </code>
+            </pre>
+
+            <P>A condição pode ser uma ou mais características, combinadas com operadores lógicos como <code>and</code>,
+                <code>or</code> e <code>not</code>.</P>
+        </section>
+
+        <section>
+            <h2>Tipos de Mídia</h2>
+            <p>As Media Queries podem ser direcionadas para diferentes tipos de mídia:</p>
+            <ul>
+                <li><code>all</code>: Todos os tipos de mídia</li>
+                <li><code>screen</code>: computador, tablets, smartphones, etc.</li>
+                <li><code>print</code>: Impressoras</li>
+                <li><code>tv</code>: Televisores</li>
+                <li><code>projection</code>: Projetores</li>
+                <li><code>handheld</code>: Dispositivos portáteis (PDAs, etc.)</li>
+                <li><code>braille</code>: Dispositivos para deficientes visuais</li>
+                <li><code>embossed</code>: Impressoras braille</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Características</h2>
+            <p>As Media Queries podem testar diversas características do dispositivo ou navegador:</p>
+            <ul>
+                <li><code>width</code>: Largura da tela</li>
+                <li><code>height</code>: Altura da tela</li>
+                <li><code>device-width</code>: Largura do dispositivo</li>
+                <li><code>device-height</code>: Altura do dispositivo</li>
+                <li><code>orientation</code>: Orientação da tela (portrait ou landscape)</li>
+                <li><code>resolution</code>: Resolução da tela</li>
+                <li><code>aspect-ratio</code>: Proporção da tela</li>
+                <li><code>device-aspect-ratio</code>: Proporção do dispositivo</li>
+                <li><code>color</code>: Número de bits por componente de cor</li>
+                <li><code>color-index</code>: Número de entradas na tabela de cores</li>
+                <li><code>monochrome</code>: Dispositivo monocromático</li>
+                <li><code>scan</code>: Tipo de varredura (interlace ou progressive)</li>
+                <li><code>grid</code>: Dispositivo em grade (telas de texto)</li>
+                <li><code>pointer</code>: Tipo de ponteiro (none, coarse, fine)</li>
+                <li><code>hover</code>: Capacidade de passar o mouse (none, hover)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exemplos</h2>
+            <h3>Exemplo 1: Estilos para telas menores que 768px de largura</h3>
+            <pre>
+                    <code>
+                    @media (max-width: 767px) {
+                        body {
+                            font-size: 14px;
+                        }
+                        .menu {
+                            display: none;
+                        }
+                    }
+                    </code>
+                </pre>
+            <h3>Exemplo 2: Estilos para impressão</h3>
+            <pre>
+                    <code>
+                    @media print {
+                        body {
+                            font-size: 12pt;
+                        }
+                        .no-print {
+                            display: none;
+                        }
+                    }
+                    </code>
+                </pre>
+        </section>
+
+        <section>
+            <h2>Vantagens</h2>
+            <p>O uso de Media Queries oferece diversas vantagens:</p>
+            <ul>
+                <li>Criação de layouts responsivos</li>
+                <li>Otimização da experiência do usuário em diferentes dispositivos</li>
+                <li>Melhor acessibilidade</li>
+                <li>Maior flexibilidade no design</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusão</h2>
+            <p>As Media Queries são uma ferramenta essencial para qualquer desenvolvedor web que deseja criar sites
+                modernos e responsivos. Com elas, é possível adaptar o design para diferentes dispositivos e tamanhos de
+                tela, garantindo que o conteúdo seja exibido da melhor forma possível para cada usuário.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Exemplo de Artigo sobre Media Queries</p>
+    </footer>
+
+</body>
+
+</html>

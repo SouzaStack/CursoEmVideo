@@ -1,0 +1,16 @@
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-logo: 'Passion One', cursive;
+
+    --cor-fundo: #f5f5f5;
+    --cor-font: #333;
+    --cor-destac: #c5ebd6;
+}
+
+* {
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
