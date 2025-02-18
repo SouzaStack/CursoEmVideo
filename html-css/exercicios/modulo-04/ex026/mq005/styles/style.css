@@ -7,6 +7,8 @@
 
 body, html {
     background-color: lightgray;
+    /* width: 100vw; */
+    height: 100vh;
 }
 
 header {
@@ -32,10 +34,6 @@ span#burguer {
 span#burguer:hover {
     background-color: #fff;
     color: #000;
-}
-
-menu {
-    display: none;
 }
 
 menu > ul {
