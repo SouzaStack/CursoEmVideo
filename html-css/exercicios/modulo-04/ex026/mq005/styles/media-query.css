@@ -9,10 +9,8 @@ Grandes:   acima de 1200px
 */
 
 @media print {
-    header > menu {
+    header > menu, span {
         display: none;
-    }
-    header > span {
         opacity: 0;
     }
 }
