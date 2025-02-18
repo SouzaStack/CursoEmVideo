@@ -8,6 +8,15 @@ Desktop:   992px ate 1200px
 Grandes:   acima de 1200px
 */
 
+@media print {
+    header > menu {
+        display: none;
+    }
+    header > span {
+        opacity: 0;
+    }
+}
+
 @media screen and (min-width: 768px) {
     span#burguer {
         display: none;
